@@ -1,0 +1,33 @@
+:root{
+/* 4px base, doubling through the mid range. Layout gutters are multiples of 8. */
+--space-0:0;
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:20px;
+--space-6:24px;
+--space-8:32px;
+--space-10:40px;
+--space-12:48px;
+--space-16:64px;
+--space-20:80px;
+--space-24:96px;
+--space-32:128px;
+
+/* Slide geometry, taken from the deck: 1920x1080 with a 96px margin */
+--slide-w:1920px;
+--slide-h:1080px;
+--slide-margin:96px;
+--slide-gutter:48px;
+
+/* Screen layout */
+--page-gutter:32px;
+--page-max:1280px;
+--sidebar-w:264px;
+--topbar-h:64px;
+--row-h:56px;
+--control-h:40px;
+--control-h-sm:32px;
+--control-h-lg:48px;
+}

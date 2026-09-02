@@ -1,0 +1,14 @@
+:root{
+/* Depth reads as a hairline first, shadow second. Shadows are warm-black, never neutral grey. */
+--shadow-none:none;
+--shadow-hairline:0 0 0 1px var(--border-hairline);
+--shadow-sm:0 1px 2px color-mix(in srgb,var(--bsv-near-black) 10%,transparent);
+--shadow-md:0 2px 8px color-mix(in srgb,var(--bsv-near-black) 12%,transparent);
+--shadow-lg:0 12px 32px color-mix(in srgb,var(--bsv-near-black) 18%,transparent);
+--shadow-inset:inset 0 1px 0 color-mix(in srgb,var(--bsv-near-black) 6%,transparent);
+--shadow-focus:0 0 0 2px var(--surface-page),0 0 0 4px var(--focus-ring);
+--glow-amber:0 0 24px color-mix(in srgb,var(--bsv-amber) 40%,transparent);
+
+--scrim-dark:linear-gradient(to top,color-mix(in srgb,var(--bsv-near-black) 88%,transparent),transparent);
+--blur-panel:saturate(120%) blur(16px); /* @kind other */
+}

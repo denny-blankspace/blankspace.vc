@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!--[CDATA[<sc-helmet-->
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/tokens/colors.css">
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/tokens/typography.css">
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/tokens/radius-border.css">
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/tokens/motion.css">
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/tokens/gradients.css">
+<link rel="stylesheet" href="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/styles.css">
+<script src="_ds/blank-space-ventures-design-system-8e9344bf-d295-4a97-9397-539c54518442/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#1E0802;color:#fff;font-family:var(--font-sans),Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--bsv-amber);text-decoration:none}
+a:hover{color:var(--bsv-white)}
+::selection{background:var(--bsv-amber);color:var(--bsv-near-black)}
+@keyframes bsvDriftA{0%{transform:translate3d(-6%,-3%,0) scale(1.18)}100%{transform:translate3d(7%,5%,0) scale(1.34)}}
+@keyframes bsvDriftB{0%{transform:translate3d(8%,6%,0) scale(1.25)}100%{transform:translate3d(-7%,-4%,0) scale(1.05)}}
+@keyframes bsvDriftC{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-4%,3%,0) scale(1.12)}100%{transform:translate3d(0,0,0) scale(1)}}
+@keyframes bsvMarquee{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-50%,0,0)}}
+@keyframes bsvRise{0%{opacity:0;transform:translateY(16px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes bsvRunway{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+</style>
+
+<div class="bsv-dark" style="position:relative;background:var(--bsv-near-black);color:var(--bsv-white);font-family:var(--font-sans);overflow-x:clip">
+
+  <section id="top" style="position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;padding:clamp(24px,5vh,64px) clamp(20px,4vw,56px) clamp(20px,4vh,48px);overflow:hidden">
+    <div style="position:absolute;inset:0;background:linear-gradient(118deg,var(--bsv-burgundy) 0%,#C2331B 26%,#E86A00 55%,var(--bsv-amber) 100%)"></div>
+    <div style="position:absolute;inset:-30%;background:radial-gradient(38% 38% at 18% 14%,color-mix(in srgb,var(--bsv-burgundy) 96%,transparent) 0%,transparent 68%),radial-gradient(42% 42% at 84% 22%,color-mix(in srgb,var(--bsv-amber) 92%,transparent) 0%,transparent 70%);filter:blur(40px);animation:bsvDriftA 30s var(--ease-standard) infinite alternate;animation-play-state:{{ meshPlay }};will-change:transform"></div>
+    <div style="position:absolute;inset:-30%;background:radial-gradient(40% 40% at 26% 82%,color-mix(in srgb,var(--bsv-amber) 78%,transparent) 0%,transparent 70%),radial-gradient(36% 36% at 78% 88%,color-mix(in srgb,var(--bsv-burgundy) 82%,transparent) 0%,transparent 72%);filter:blur(50px);opacity:.9;animation:bsvDriftB 42s var(--ease-standard) infinite alternate;animation-play-state:{{ meshPlay }};will-change:transform"></div>
+    <div style="position:absolute;inset:-20%;background:radial-gradient(34% 34% at 58% 46%,#FF8A00 0%,transparent 72%);filter:blur(60px);mix-blend-mode:screen;opacity:.85;animation:bsvDriftC 26s ease-in-out infinite;animation-play-state:{{ meshPlay }};will-change:transform"></div>
+    <div style="position:absolute;inset:0;background-image:url(assets/imagery/gradient-mesh-amber.png);background-size:cover;background-position:center;mix-blend-mode:soft-light;opacity:.55"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(180deg,transparent 0%,var(--bsv-near-black) 100%)"></div>
+
+    <div style="position:relative;width:100%;display:flex;justify-content:flex-start;animation:bsvRise 700ms var(--ease-out) both">
+      <x-import component-from-global-scope="BlankSpaceVenturesDesignSystem_8e9344.Logo" lockup="iconleft" tone="white" asset-base="assets/logos/" height="{{ heroLogoH }}" hint-size="190px,32px"></x-import>
+    </div>
+
+    <div style="position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:clamp(20px,3.2vh,40px);padding:clamp(20px,5vh,64px) 0;min-height:0">
+      <p style="margin:0;max-width:19ch;font-family:var(--font-serif);font-weight:400;font-size:clamp(30px,min(5.6vw,9vh),84px);line-height:1.08;letter-spacing:-0.015em;color:var(--bsv-white);text-wrap:balance;animation:bsvRise 700ms 120ms var(--ease-out) both">Backing what’s next, before it’s noticed</p>
+    </div>
+
+  </section>
+
+  <div style="position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(20px,4vw,56px);height:72px;background:color-mix(in srgb,var(--bsv-near-black) 86%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--border-hairline)">
+    <a href="#top" style="display:flex;align-items:center">
+      <x-import component-from-global-scope="BlankSpaceVenturesDesignSystem_8e9344.Logo" lockup="icon" tone="white" asset-base="assets/logos/" height="{{ navLogoH }}" hint-size="24px,24px"></x-import>
+    </a>
+  </div>
+
+  <section style="padding:clamp(80px,12vh,150px) 0 0">
+    <div style="position:relative;height:clamp(320px,52vh,480px);background-image:url(assets/imagery/runway-approach-lights.png);background-size:cover;background-position:center 38%">
+      <div style="position:absolute;inset:0;background:var(--gradient-protect)"></div>
+    </div>
+  </section>
+
+  <section id="companies" style="padding:clamp(72px,10vh,120px) 0 0;scroll-margin-top:96px">
+    <div style="padding:0 clamp(20px,4vw,56px)">
+    <div style="max-width:1280px;margin:0 auto">
+      <x-import component-from-global-scope="BlankSpaceVenturesDesignSystem_8e9344.Eyebrow" tone="accent" hint-size="140px,16px">Companies</x-import>
+    </div>
+    </div>
+    <div style="margin-top:clamp(28px,3.5vh,40px);border-top:1px solid var(--border-hairline);border-bottom:1px solid var(--border-hairline);overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%)">
+      <div style="display:flex;width:max-content;animation:bsvMarquee 42s linear infinite;animation-play-state:{{ meshPlay }};will-change:transform">
+        <div style="display:flex;align-items:center">
+            <a href="https://n8n.io/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/n8n.svg" alt="n8n" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.pasqal.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/pasqal.svg" alt="Pasqal" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.idquantique.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/idquantique.png" alt="ID Quantique" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1.5);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://sydecar.io/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/sydecar.svg" alt="Sydecar" style="width:clamp(92px,10.5vw,132px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1.35);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://mambu.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/mambu.svg" alt="Mambu" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://axiom-trust.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/axiom-trust.png" alt="Axiom Trust" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.lacelithography.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/lace.webp" alt="Lace Lithography" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://enlightra.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/enlightra.svg" alt="Enlightra" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.ubitium.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/ubitium.svg" alt="Ubitium" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://bunny.net/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/bunny.svg" alt="bunny.net" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://nginx.org/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/nginx.svg" alt="NGINX" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.ando.work/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/ando.avif" alt="Ando" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://revelrobotics.com/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/revel.svg" alt="Revel Robotics" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+        </div>
+        <div style="display:flex;align-items:center" aria-hidden="true">
+            <a href="https://n8n.io/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/n8n.svg" alt="n8n" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.pasqal.com/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/pasqal.svg" alt="Pasqal" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.idquantique.com/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/idquantique.png" alt="ID Quantique" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1.5);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://sydecar.io/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/sydecar.svg" alt="Sydecar" style="width:clamp(92px,10.5vw,132px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1.35);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://mambu.com/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/mambu.svg" alt="Mambu" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://axiom-trust.com/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/axiom-trust.png" alt="Axiom Trust" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.lacelithography.com/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/lace.webp" alt="Lace Lithography" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://enlightra.com/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/enlightra.svg" alt="Enlightra" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.ubitium.com/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/ubitium.svg" alt="Ubitium" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://bunny.net/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/bunny.svg" alt="bunny.net" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://nginx.org/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/nginx.svg" alt="NGINX" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://www.ando.work/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/ando.avif" alt="Ando" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+            <a href="https://revelrobotics.com/" target="_blank" rel="noopener" tabindex="-1" style="display:flex;align-items:center;justify-content:center;height:clamp(96px,12vh,132px);padding:0 clamp(32px,4vw,64px);font-size:clamp(20px,1.8vw,26px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-stone);white-space:nowrap;border-right:1px solid var(--border-hairline);transition:background 140ms var(--ease-standard),color 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard)" style-hover="color:var(--bsv-near-black);background:#F69B01;box-shadow:inset 0 0 0 1px #F69B01">
+              <img src="assets/logos/companies/revel.svg" alt="Revel Robotics" style="width:clamp(104px,12vw,150px);height:clamp(34px,3.6vw,46px);object-fit:contain;opacity:.8;transform:scale(1);transition:opacity 140ms var(--ease-standard)" style-hover="opacity:1">
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" style="padding:clamp(72px,10vh,120px) clamp(20px,4vw,56px) clamp(64px,9vh,110px);scroll-margin-top:96px">
+    <div style="max-width:1280px;margin:0 auto">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:clamp(28px,3.5vh,40px)">
+        <x-import component-from-global-scope="BlankSpaceVenturesDesignSystem_8e9344.Eyebrow" tone="accent" hint-size="120px,16px">Team</x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:clamp(24px,3vw,40px)">
+        <div style="border-top:1px solid var(--border-hairline);padding-top:20px">
+          <div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--surface-panel);margin-bottom:22px;overflow:hidden">
+            
+          <image-slot id="team-andre" shape="rect" placeholder="Andre Bliznyuk — portrait" src="./man_wide_1440x840-mtjnkwti-8n0u.jpg"></image-slot></div>
+          <h3 style="margin:0 0 10px;font-size:clamp(18px,1.5vw,22px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-white)">Andre Bliznyuk</h3>
+          <div style="font-size:var(--ui-note);font-weight:var(--fw-bold);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--bsv-amber)">General Partner</div>
+        </div>
+        <div style="border-top:1px solid var(--border-hairline);padding-top:20px">
+          <div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--surface-panel);margin-bottom:22px;overflow:hidden">
+            <image-slot id="team-michael" shape="rect" placeholder="Michael Fanfant — portrait" src="./m_fanfant-big-mtjnl17h-0ve7.jpg"></image-slot>
+          </div>
+          <h3 style="margin:0 0 10px;font-size:clamp(18px,1.5vw,22px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-white)">Michael Fanfant</h3>
+          <div style="font-size:var(--ui-note);font-weight:var(--fw-bold);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--bsv-amber)">General Partner</div>
+        </div>
+        <div style="border-top:1px solid var(--border-hairline);padding-top:20px">
+          <div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--surface-panel);margin-bottom:22px;overflow:hidden">
+            <image-slot id="team-dmitry" shape="rect" placeholder="Dmitry Galperin — portrait" src="./d_galperin-big-1-mtjnlgm6-yxed.jpg"></image-slot>
+          </div>
+          <h3 style="margin:0 0 10px;font-size:clamp(18px,1.5vw,22px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-white)">Dmitry Galperin</h3>
+          <div style="font-size:var(--ui-note);font-weight:var(--fw-bold);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--bsv-amber)">General Partner</div>
+        </div>
+        <div style="border-top:1px solid var(--border-hairline);padding-top:20px">
+          <div style="position:relative;width:100%;aspect-ratio:4/5;background:var(--surface-panel);margin-bottom:22px;overflow:hidden">
+            <image-slot id="team-denny" shape="rect" placeholder="Denny Gabriel — portrait" src="./gemini_generated_image_nqo4h9nqo4h9nqo4-mtjnmfwl-4xph.png"></image-slot>
+          </div>
+          <h3 style="margin:0 0 10px;font-size:clamp(18px,1.5vw,22px);font-weight:var(--fw-bold);letter-spacing:-0.02em;color:var(--bsv-white)">Denny Gabriel</h3>
+          <div style="font-size:var(--ui-note);font-weight:var(--fw-bold);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--bsv-amber)">Investor</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:0 clamp(20px,4vw,56px) clamp(36px,5vh,56px)">
+    <div style="max-width:1280px;margin:0 auto;border-top:1px solid var(--border-hairline);padding-top:28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <x-import component-from-global-scope="BlankSpaceVenturesDesignSystem_8e9344.Logo" lockup="iconleft" tone="white" asset-base="assets/logos/" height="{{ navLogoH }}" hint-size="150px,24px"></x-import>
+      <div style="display:flex;align-items:center;gap:clamp(16px,2.4vw,32px)">
+        <a href="#top" style="font-size:var(--ui-note);font-weight:var(--fw-bold);letter-spacing:var(--ls-note);text-transform:uppercase;color:var(--text-muted)" style-hover="color:var(--bsv-white)">Legal</a>
+        <a href="#top" style="font-size:var(--ui-note);font-weight:var(--fw-bold);letter-spacing:var(--ls-note);text-transform:uppercase;color:var(--text-muted)" style-hover="color:var(--bsv-white)">LP login</a>
+        <span style="font-size:var(--ui-note);font-weight:var(--fw-bold);letter-spacing:var(--ls-note);text-transform:uppercase;color:var(--text-muted)">© 2026 Blank Space Ventures</span>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroMotion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      heroLogoH: 32,
+      navLogoH: 24,
+      meshPlay: (this.props.heroMotion ?? true) ? 'running' : 'paused'
+    };
+  }
+}
+</script>
+</body>
+</html>

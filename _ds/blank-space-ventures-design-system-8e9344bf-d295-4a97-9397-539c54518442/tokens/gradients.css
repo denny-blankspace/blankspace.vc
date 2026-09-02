@@ -1,0 +1,9 @@
+:root{
+/* The gradient mesh: amber core falling into burgundy, as rendered in the identity deck.
+   assets/imagery/gradient-mesh-amber.png is the authored artwork; these are the CSS stand-ins. */
+--gradient-mesh:radial-gradient(120% 110% at 78% 18%,var(--bsv-amber) 0%,#E07A02 34%,#C25A10 58%,var(--bsv-burgundy) 88%);
+--gradient-mesh-image:url("../assets/imagery/gradient-mesh-amber.png"); /* @kind other */
+--gradient-amber-edge:linear-gradient(90deg,var(--bsv-amber),color-mix(in srgb,var(--bsv-amber) 0%,transparent));
+--gradient-night:linear-gradient(180deg,var(--bsv-near-black),color-mix(in srgb,var(--bsv-burgundy) 55%,var(--bsv-near-black)));
+--gradient-protect:linear-gradient(to top,color-mix(in srgb,var(--bsv-near-black) 92%,transparent) 0%,transparent 70%);
+}

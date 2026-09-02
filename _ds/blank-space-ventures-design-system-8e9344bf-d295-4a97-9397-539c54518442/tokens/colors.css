@@ -1,0 +1,75 @@
+:root{
+/* --- Brand palette (exact values, Brand Identity V2.0 p.11) --- */
+--bsv-near-black:#1E0802;
+--bsv-burgundy:#5B1A2A;
+--bsv-amber:#F69B01;
+--bsv-amber-dark:#B87400;
+--bsv-white:#FFFFFF;
+--bsv-stone:#B5AFA6;
+--bsv-light-grey:#E8E8E8;
+
+/* --- Derived steps. Mixes of the seven brand colours only; no new hues. --- */
+--bsv-near-black-90:color-mix(in srgb,var(--bsv-near-black) 90%,var(--bsv-white));
+--bsv-near-black-raised:color-mix(in srgb,var(--bsv-near-black) 92%,var(--bsv-stone));
+--bsv-burgundy-deep:color-mix(in srgb,var(--bsv-burgundy) 70%,var(--bsv-near-black));
+--bsv-burgundy-tint:color-mix(in srgb,var(--bsv-burgundy) 12%,var(--bsv-white));
+--bsv-amber-tint:color-mix(in srgb,var(--bsv-amber) 14%,var(--bsv-white));
+--bsv-stone-light:color-mix(in srgb,var(--bsv-stone) 35%,var(--bsv-white));
+--bsv-paper:color-mix(in srgb,var(--bsv-light-grey) 45%,var(--bsv-white));
+
+/* --- Semantic aliases: light ground (default) --- */
+--surface-page:var(--bsv-white);
+--surface-sunken:var(--bsv-paper);
+--surface-panel:var(--bsv-white);
+--surface-inset:var(--bsv-light-grey);
+--surface-inverse:var(--bsv-near-black);
+--surface-accent:var(--bsv-amber);
+--surface-accent-soft:var(--bsv-amber-tint);
+--surface-brand:var(--bsv-burgundy);
+--surface-brand-soft:var(--bsv-burgundy-tint);
+
+--text-primary:var(--bsv-near-black);
+--text-secondary:color-mix(in srgb,var(--bsv-near-black) 68%,var(--bsv-white));
+--text-muted:color-mix(in srgb,var(--bsv-near-black) 44%,var(--bsv-white));
+--text-inverse:var(--bsv-white);
+--text-inverse-muted:var(--bsv-stone);
+--text-accent:var(--bsv-amber-dark);
+--text-brand:var(--bsv-burgundy);
+
+--border-hairline:var(--bsv-light-grey);
+--border-default:color-mix(in srgb,var(--bsv-stone) 60%,var(--bsv-white));
+--border-strong:var(--bsv-near-black);
+--border-accent:var(--bsv-amber);
+
+--focus-ring:var(--bsv-amber);
+--selection-bg:var(--bsv-amber-tint);
+
+/* --- Status. Drawn from the palette; the brand defines no separate status hues. --- */
+--status-live:var(--bsv-amber);
+--status-neutral:var(--bsv-stone);
+--status-closed:var(--bsv-burgundy);
+}
+
+/* --- Dark ground: Near Black surfaces, the brand's primary presentation mode --- */
+:root[data-theme="dark"],.bsv-dark{
+--surface-page:var(--bsv-near-black);
+--surface-sunken:var(--bsv-near-black);
+--surface-panel:var(--bsv-near-black-raised);
+--surface-inset:color-mix(in srgb,var(--bsv-near-black) 88%,var(--bsv-stone));
+--surface-inverse:var(--bsv-white);
+--surface-brand:var(--bsv-burgundy);
+--surface-brand-soft:var(--bsv-burgundy-deep);
+--surface-accent-soft:color-mix(in srgb,var(--bsv-amber) 18%,var(--bsv-near-black));
+
+--text-primary:var(--bsv-white);
+--text-secondary:var(--bsv-stone);
+--text-muted:color-mix(in srgb,var(--bsv-stone) 62%,var(--bsv-near-black));
+--text-inverse:var(--bsv-near-black);
+--text-inverse-muted:var(--bsv-burgundy);
+--text-accent:var(--bsv-amber);
+--text-brand:color-mix(in srgb,var(--bsv-burgundy) 55%,var(--bsv-white));
+
+--border-hairline:color-mix(in srgb,var(--bsv-stone) 20%,var(--bsv-near-black));
+--border-default:color-mix(in srgb,var(--bsv-stone) 38%,var(--bsv-near-black));
+--border-strong:var(--bsv-stone);
+}
